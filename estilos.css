@@ -1,57 +1,59 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff0f5;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff6fa;
   margin: 0;
   padding: 20px;
+  color: #333;
 }
 
 h1 {
   text-align: center;
-  color: #c71585;
-  margin-bottom: 30px;
+  color: #d63384;
+  margin-bottom: 40px;
 }
 
 .malla {
   display: flex;
+  gap: 16px;
   overflow-x: auto;
-  gap: 20px;
   padding-bottom: 20px;
+  justify-content: start;
 }
 
-.semestre-columna {
-  min-width: 220px;
-  background-color: #ffe0ec;
-  border: 2px solid #c71585;
-  border-radius: 15px;
+.semestre {
+  background-color: #fce4ec;
+  border-radius: 12px;
   padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
-.semestre-columna h2 {
-  color: #c71585;
-  font-size: 18px;
-  margin-bottom: 10px;
+.semestre h2 {
   text-align: center;
+  color: #b30059;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .ramo {
-  background-color: #ffc0cb;
+  background-color: #e3b3d5;
+  color: #333;
+  padding: 10px;
   border-radius: 10px;
-  margin: 5px 0;
-  padding: 8px;
+  margin-bottom: 8px;
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.2s;
+  font-weight: 500;
   text-align: center;
+  transition: background-color 0.2s ease;
 }
 
 .ramo:hover {
-  background-color: #fba6bf;
+  background-color: #dca3cb;
 }
 
 .ramo.aprobado {
   text-decoration: line-through;
-  background-color: #ffeef3;
-  color: #999;
+  background-color: #fbe3f1;
+  color: #888;
 }
