@@ -7,121 +7,109 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <h1>Malla Enfermería UMAG</h1>
+  <h1>Malla Curricular Enfermería - UMAG</h1>
+
   <div class="malla">
-    <!-- Año 1 -->
-    <section>
-      <h2>Año 1</h2>
-      <div class="semestre">
-        <h3>Semestre 1</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Enfermería como Ciencia del Cuidado</div>
-        <div class="ramo" onclick="toggleRamo(this)">Biología Celular</div>
-        <div class="ramo" onclick="toggleRamo(this)">Anatomía</div>
-        <div class="ramo" onclick="toggleRamo(this)">Química General y Orgánica</div>
-        <div class="ramo" onclick="toggleRamo(this)">Computación Básica</div>
-        <div class="ramo" onclick="toggleRamo(this)">Comunicación Efectiva</div>
-      </div>
-      <div class="semestre">
-        <h3>Semestre 2</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Nivelación de Competencias Básicas I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Procesos Afectivos y Cognitivos de la Persona</div>
-        <div class="ramo" onclick="toggleRamo(this)">Filosofías y Modelos de Enfermería</div>
-        <div class="ramo" onclick="toggleRamo(this)">Histoembriología</div>
-        <div class="ramo" onclick="toggleRamo(this)">Bioquímica</div>
-        <div class="ramo" onclick="toggleRamo(this)">Salud Pública y Epidemiología</div>
-      </div>
-    </section>
+    <!-- Cada columna es un semestre -->
+    <div class="semestre-columna">
+      <h2>Semestre 1</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Enfermería como Ciencia del Cuidado</div>
+      <div class="ramo" onclick="toggleRamo(this)">Biología Celular</div>
+      <div class="ramo" onclick="toggleRamo(this)">Anatomía</div>
+      <div class="ramo" onclick="toggleRamo(this)">Química General y Orgánica</div>
+      <div class="ramo" onclick="toggleRamo(this)">Computación Básica</div>
+      <div class="ramo" onclick="toggleRamo(this)">Comunicación Efectiva</div>
+    </div>
 
-    <!-- Año 2 -->
-    <section>
-      <h2>Año 2</h2>
-      <div class="semestre">
-        <h3>Semestre 3</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Inglés I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Nivelación de Competencias Básicas II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Persona y su Entorno Sociocultural</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Familia y Comunidad I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Infectología Clínica</div>
-        <div class="ramo" onclick="toggleRamo(this)">Fisiología</div>
-      </div>
-      <div class="semestre">
-        <h3>Semestre 4</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Educación en Salud</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Información y Construcción del Conocimiento</div>
-        <div class="ramo" onclick="toggleRamo(this)">Inglés II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Familia y Comunidad II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Fisiopatología</div>
-      </div>
-    </section>
+    <div class="semestre-columna">
+      <h2>Semestre 2</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Nivelación Competencias I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Procesos Afectivos y Cognitivos</div>
+      <div class="ramo" onclick="toggleRamo(this)">Filosofías y Modelos de Enfermería</div>
+      <div class="ramo" onclick="toggleRamo(this)">Histoembriología</div>
+      <div class="ramo" onclick="toggleRamo(this)">Bioquímica</div>
+      <div class="ramo" onclick="toggleRamo(this)">Salud Pública y Epidemiología</div>
+    </div>
 
-    <!-- Año 3 -->
-    <section>
-      <h2>Año 3</h2>
-      <div class="semestre">
-        <h3>Semestre 5</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Farmacología</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Adulto y Adulto Mayor I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Bioestadística</div>
-        <div class="ramo" onclick="toggleRamo(this)">Liderazgo y Gestión en Enfermería I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados en Salud Mental</div>
-        <div class="ramo" onclick="toggleRamo(this)">Paradigma de Investigación Cualitativa</div>
-      </div>
-      <div class="semestre">
-        <h3>Semestre 6</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Ética en Enfermería</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Adulto y Adulto Mayor III</div>
-        <div class="ramo" onclick="toggleRamo(this)">Liderazgo y Gestión en Enfermería II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Niño y Adolescente I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Paradigma de Investigación Cuantitativa</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador II</div>
-      </div>
-    </section>
+    <div class="semestre-columna">
+      <h2>Semestre 3</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Inglés I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Nivelación Competencias II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Entorno Sociocultural</div>
+      <div class="ramo" onclick="toggleRamo(this)">Gestión Familia y Comunidad I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Infectología Clínica</div>
+      <div class="ramo" onclick="toggleRamo(this)">Fisiología</div>
+    </div>
 
-    <!-- Año 4 -->
-    <section>
-      <h2>Año 4</h2>
-      <div class="semestre">
-        <h3>Semestre 7</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Adulto y Adulto Mayor II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Inglés III</div>
-        <div class="ramo" onclick="toggleRamo(this)">Electivo A</div>
-        <div class="ramo" onclick="toggleRamo(this)">Electivo B</div>
-        <div class="ramo" onclick="toggleRamo(this)">Electivo C</div>
-        <div class="ramo" onclick="toggleRamo(this)">Electivo D</div>
-        <div class="ramo" onclick="toggleRamo(this)">Proyecto de Titulación</div>
-      </div>
-      <div class="semestre">
-        <h3>Semestre 8</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Niño y Adolescente II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Investigación en Enfermería I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Proyectos de Promoción en Salud</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador III</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario de Actualización I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Bioética</div>
-      </div>
-    </section>
+    <div class="semestre-columna">
+      <h2>Semestre 4</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Educación en Salud</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Construcción del Conocimiento</div>
+      <div class="ramo" onclick="toggleRamo(this)">Inglés II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Gestión Familia y Comunidad II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Fisiopatología</div>
+    </div>
 
-    <!-- Año 5 -->
-    <section>
-      <h2>Año 5</h2>
-      <div class="semestre">
-        <h3>Semestre 9</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados Adulto Crítico y Urgencias</div>
-        <div class="ramo" onclick="toggleRamo(this)">Gestión de Cuidados de Salud Mental y Psiquiatría</div>
-        <div class="ramo" onclick="toggleRamo(this)">Investigación en Enfermería II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario de Actualización II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Liderazgo y Gestión en Enfermería III</div>
-      </div>
-      <div class="semestre">
-        <h3>Semestre 10</h3>
-        <div class="ramo" onclick="toggleRamo(this)">Internado Profesional I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario de Profundización I</div>
-        <div class="ramo" onclick="toggleRamo(this)">Internado Profesional II</div>
-        <div class="ramo" onclick="toggleRamo(this)">Seminario de Profundización II</div>
-      </div>
-    </section>
+    <div class="semestre-columna">
+      <h2>Semestre 5</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Farmacología</div>
+      <div class="ramo" onclick="toggleRamo(this)">Gestión Adulto y Adulto Mayor I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Bioestadística</div>
+      <div class="ramo" onclick="toggleRamo(this)">Liderazgo I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Salud Mental</div>
+      <div class="ramo" onclick="toggleRamo(this)">Investigación Cualitativa</div>
+    </div>
+
+    <div class="semestre-columna">
+      <h2>Semestre 6</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Ética en Enfermería</div>
+      <div class="ramo" onclick="toggleRamo(this)">Gestión Adulto y Adulto Mayor III</div>
+      <div class="ramo" onclick="toggleRamo(this)">Liderazgo II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Niño y Adolescente I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Investigación Cuantitativa</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador II</div>
+    </div>
+
+    <div class="semestre-columna">
+      <h2>Semestre 7</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Gestión Adulto y Adulto Mayor II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Inglés III</div>
+      <div class="ramo" onclick="toggleRamo(this)">Electivo A</div>
+      <div class="ramo" onclick="toggleRamo(this)">Electivo B</div>
+      <div class="ramo" onclick="toggleRamo(this)">Electivo C</div>
+      <div class="ramo" onclick="toggleRamo(this)">Electivo D</div>
+      <div class="ramo" onclick="toggleRamo(this)">Proyecto de Titulación</div>
+    </div>
+
+    <div class="semestre-columna">
+      <h2>Semestre 8</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Niño y Adolescente II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Investigación en Enfermería I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Promoción en Salud</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Integrador III</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Actualización I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Bioética</div>
+    </div>
+
+    <div class="semestre-columna">
+      <h2>Semestre 9</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Cuidados Críticos y Urgencias</div>
+      <div class="ramo" onclick="toggleRamo(this)">Salud Mental y Psiquiatría</div>
+      <div class="ramo" onclick="toggleRamo(this)">Investigación en Enfermería II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Actualización II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Liderazgo III</div>
+    </div>
+
+    <div class="semestre-columna">
+      <h2>Semestre 10</h2>
+      <div class="ramo" onclick="toggleRamo(this)">Internado Profesional I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Profundización I</div>
+      <div class="ramo" onclick="toggleRamo(this)">Internado Profesional II</div>
+      <div class="ramo" onclick="toggleRamo(this)">Seminario Profundización II</div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
